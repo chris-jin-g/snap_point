@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" wp-template wp-template-define-master-page="true" data-pgc-set-master>
+    <head data-pgc-define="master_head" data-pgc-define-name="<!head> Code">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/font-awesome/stylesheet/all.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.typekit.net/sgi7tib.css">
+    </head>
+    <body itemscope="" itemtype="http://schema.org/WebPage" wp-body-class>
+        <div class="site reuse_items" wp-call-function="$jr_url = get_site_url();" wp-call-function-set="before">
+            <header id="jr-header" data-pgc-define="jr-header" wp-featured-bck wp-featured-bck-size="full">
+                <div id="gradient_header_img"></div>
+                <div id="wrapper-navbar">
+                    <a class="skip-link sr-only sr-only-focusable" href="#content">Skip to content</a>
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <div class="container-fluid">
+                            <div data-pg-name="Logo" id="logo">
+                                <a rel="home" class="navbar-brand" href="#filler" wp-home-url wp-home-url-set="href"> <img id="jr_head_logo" src="assets/images/Car-Wreck-Cowboy-lawyer-logo.png" wp-call-function-set="attr" wp-call-function-set-attr="href" alt="Car Wreck Cowboy Logo"/> </a>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler6" aria-controls="navbarToggler6" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'st2' ); ?>">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="nav_phone_wrapper">
+                                <div class="collapse navbar-collapse" id="navbarToggler6">
+                                    <ul class="mt-2 mt-lg-0 navbar-nav" wp-nav-menu wp-nav-menu-type="bootstrap4" wp-if-has-nav-menu="primary" wp-nav-menu-depth="2" wp-nav-menu-theme-location="primary" id="menu-main-navigation">
+                                        <li class="nav-item active">
+                                            <a class="nav-item nav-link" href="#filler">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="#filler">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="#filler">What We Do</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="#filler">Results</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="#filler">Locations</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="#filler">contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="cowboy_CTA">
+                                    <div class="phone_icon">
+                                        <img src="assets/images/call-car-wreck-cowboy.png" class="phone_icon"/>
+                                    </div>
+                                    <div class="text_wrap">
+                                        <div class="twentyfour">24/7 Free Consultations</div>
+                                        <a href="tel:1-855-269-2699" class="number">1-855-COWBOY9</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="container" id="h1_wrapper">
+                    <div class="bread-crumb">
+                        <a href="#filler" class="bread_link" wp-home-url wp-home-url-set="href">Home</a>
+                        <span class="bread_link_here" wp-the-title>Current Page</span>
+                    </div>
+                    <h1 cms-post-title wp-if-is-single wp-if-is-page>Starter Theme 2</h1>
+                    <h1 wp-else-if wp-title wp-title-set="content">Still Don&apos;t Have A Dash Cam?</h1>
+                    <div class="excerpt_header" cms-post-excerpt cms-post-excerpt-if>Montgomery Law, PLLC</div>
+                </div>
+            </header>
+            <div wp-site-content id="site_content">
+                <div id="index-wrapper" class="a_jr_pad_lg">
+                    <div class="container">
+                        <p>This is the a-master (or Master 1) page and <u>only handles the header and footer of all pages/templates that use a-master.html</u> as their master page. The content in the middle of this page is for styling, theme orginization, and educational purposes only. All custom work that will be used on more than one page should be built on this page as a component item in Pinegrow (PG) actions (puzzle piece). By putting all reusable items/elements/features on this page it gives us a place to update them once for all pages that use them. Below you have space to look at common styling as well as learn about how our themes are structured.</p>
+                        <h2>Begin Custom Reusable Elements</h2>
+                        <p>Reuseable elements below are children in the <b>.reuse_items scss selector</b> in assets/css/theme.scss</p>
+                        <hr/>
+                        <div class="alert alert-warning div mb-8">This slider is used on front-page.html and page-about-us.html</div>
+                        <div id="slider_container_wrapper" data-pgc-define="icon_slider" data-pgc-define-name="Icon Slider" class="sliders">
+                            <div class="container" id="awards_slider">
+                                <div class="inner_wrapper">
+                                    <div class="arrows">
+                                        <div class="arrow_box left_arrow">
+                                            <img src="assets/images/Car-Wreck-Cowboy-lawyer-goldarrow-button.png" alt="Scroll Arrow"/>
+                                        </div>
+                                    </div>
+                                    <div class="icons_outer_wrapper">
+                                        <div class="icons_wrapper">
+                                            <div class="icon">
+                                                <img src="assets/images/Car-Wreck-Cowboy-lawyer-home-awards-multi-million-dollar.jpg"/>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/images/Car-Wreck-Cowboy-lawyer-home-awards-multi-million-dollar.jpg"/>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/images/Car-Wreck-Cowboy-lawyer-home-awards-multi-million-dollar.jpg"/>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/images/Car-Wreck-Cowboy-lawyer-home-awards-multi-million-dollar.jpg"/>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/images/Car-Wreck-Cowboy-lawyer-home-awards-multi-million-dollar.jpg"/>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/images/Car-Wreck-Cowboy-lawyer-home-awards-10-rating-top.jpg"/>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/images/Car-Wreck-Cowboy-lawyer-home-awards-10-rating-top.jpg"/>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/images/Car-Wreck-Cowboy-lawyer-home-awards-10-rating-top.jpg"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="arrows">
+                                        <div class="arrow_box right_arrow">
+                                            <img src="assets/images/Car-Wreck-Cowboy-lawyer-goldarrow-button.png" alt="Scroll Arrow"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning div mt-8">These full widh image cards are used on this_page.html, that_page.html</div>
+                        <div id="client_reviews" data-pgc-define="client_rev" data-pgc-define-name="Client Reviews">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-2 jr_column" id="client_reviews_arrows">
+                                        <div class="arrows_inner_wrapper">
+                                            <h4>Client Reviews</h4>
+                                            <div class="arrows justify-content-start justify-content-xl-center">
+                                                <div class="arrow_box left_arrow">
+                                                    <img src="assets/images/Car-Wreck-Cowboy-lawyer-goldarrow-button.png" alt="Scroll Arrow"/>
+                                                </div>
+                                                <div class="arrow_box right_arrow">
+                                                    <img src="assets/images/Car-Wreck-Cowboy-lawyer-goldarrow-button.png" alt="Scroll Arrow"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 jr_column" id="test_wrapper">
+                                        <div class="test_slider_wrapper">
+                                            <img src="assets/images/Car-Wreck-Cowboy-lawyer-quote-marks.png" alt="Quotes"/>
+                                            <div class="test_slider_container">
+                                                <div class="test_slider_content">
+                                                    <div class="inner_wrapper">
+                                                        <div class="title">Would Definitely Recommend Montgomery Law</div>
+                                                        <div class="review">&quot;My lawyers kept in contact with me through everything. The other person&rsquo;s insurance was takingforever to get things on their end done (almost a whole year), but they were adamant in gettingthings done and settled on my behalf. Would definitely recommend Montgomery Law for anycar accident!&quot;</div>
+                                                        <div class="name_test">David R (Car Accident Injury)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="test_slider_content">
+                                                    <div class="inner_wrapper">
+                                                        <div class="title">Would Definitely Recommend Montgomery Law</div>
+                                                        <div class="review">&quot;My lawyers kept in contact with me through everything. The other person&rsquo;s insurance was takingforever to get things on their end done (almost a whole year), but they were adamant in gettingthings done and settled on my behalf. Would definitely recommend Montgomery Law for anycar accident!&quot;</div>
+                                                        <div class="name_test">David R (Car Accident Injury)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning div mt-8">These full widh image cards are used on this_page.html, that_page.html</div>
+                        <div id="case_results_slider">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="arrow_column col-lg-2 jr_column">
+                                        <div class="arrows_inner_wrapper">
+                                            <h4>Case Results</h4>
+                                            <div class="arrows">
+                                                <div class="arrow_box left_arrow">
+                                                    <img src="assets/images/Car-Wreck-Cowboy-lawyer-goldarrow-button.png" alt="Scroll Arrow"/>
+                                                </div>
+                                                <div class="arrow_box right_arrow">
+                                                    <img src="assets/images/Car-Wreck-Cowboy-lawyer-goldarrow-button.png" alt="Scroll Arrow"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 jr_column">
+                                        <div id="case_slider_wrapper">
+                                            <div class="case_info">
+                                                <div class="number">$2.8M</div>
+                                                <div class="title">Dallas Car Accident</div>
+                                                <div class="excerpt">Settlement for a victim of an auto accident with a police</div>
+                                            </div>
+                                            <div class="case_info">
+                                                <div class="number">$2.8M</div>
+                                                <div class="title">Dallas Car Accident</div>
+                                                <div class="excerpt">Settlement for a victim of an auto accident with a police</div>
+                                            </div>
+                                            <div class="case_info">
+                                                <div class="number">$2.8M</div>
+                                                <div class="title">Dallas Car Accident</div>
+                                                <div class="excerpt">Settlement for a victim of an auto accident with a police</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-5 pt-5">
+                        <div class="page_cta" data-pgc-define="top_cta" data-pgc-define-name="Top of Page CTA">
+                            <div class="sigle_cta">
+                                <div class="icon">
+                                    <a href="tel:1-855-269-2699"><img src="assets/images/Car-Wreck-Cowboy-lawyer-about-phone-icon-gold.png" alt="Call Us"/></a>
+                                </div>
+                                <div class="cta_sub_title">CALL THE CAR WReCK COWBOY&nbsp;</div>
+                                <a href="tel:1-855-269-2699"><div class="cta_text">1-855-269-2699</div></a>
+                            </div>
+                            <div class="sigle_cta">
+                                <div class="icon">
+                                    <a href=""><img src="assets/images/Car-Wreck-Cowboy-lawyer-about-email-icon-gold.png" alt="Email Us"/></a>
+                                </div>
+                                <div class="cta_sub_title">Email Us About Your Case</div>
+                                <a href="#link"><div class="cta_text">Request a Free Consultation</div></a>
+                            </div>
+                            <div class="sigle_cta">
+                                <div class="icon">
+                                    <a href="#link"><img src="assets/images/Car-Wreck-Cowboy-lawyer-about-chat-icon-gold.png" alt="Chat with Us"/></a>
+                                </div>
+                                <div class="cta_sub_title">WE&rsquo;RE AVAILABLE 24 HOURS A DAY</div>
+                                <a href="#link"><div class="cta_text">Chat Live Right Now</div></a>
+                            </div>
+                        </div>
+                        <div class="alert alert-danger">End reusable items area</div>
+                    </div>
+                    <div class="container">
+                        <h2>Working With This Theme</h2>
+                        <p><b>Let&apos;s start with Jonroc custom classes and common styles/techniques.</b><span>&nbsp;We use rem for most sizing which helps keep things uniform and also plays nice with Bootstrap. All theme related styles should go in theme.scss and we use Bootstrap variables and css in our custom work as much as possible (the css is already there might as well use it). <span class="text-warning">However</span>, many times when it comes to padding or margins Bootstrap classes can make the code cluttered and hard to read, so often we create our own classes to deal with padding and margin unless there is only one or two bootstrap classes needed to give it padding or margin (same thing with FLEX most times it&apos;s better to put it into a non-bootstrap class). It&apos;s also best to create a custom class when the item is used on more than one page or for items that repeat on page so that it&apos;s easier to mass update styles across a page or the entire site.&nbsp;</span></p>
+                    </div>
+                    <div class="container mt-5">
+                        <p><b>The content below is for conviently styling Bootstrap only. </b><span>Use <u>custom.scss in the bootstrap theme folder</u> to customize the varaibles. </span><span class="text-danger">We never directly change the boostrap.css, to keep things working well we only use Bootstrap variables or override Bootstrap in custom.scss if you can&apos;t find a variable.</span></p>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">We&apos;ll get the most common boostrap elements on this page so you can check your styling, remember WordPress may overwrite some of this.</p>
+                            <footer class="blockquote-footer">Benjamin Johnstone</footer>
+                        </blockquote>
+                        <small>Small text is controlled by $small-font-size</small>
+                        <p class="">You can change this paragraph&apos;s margin bottom by changing $paragraph-margin-bottom in custom.scss. If you don&apos;t see an item below on this page then it&apos;s most likely not controlled by Bootstrap.</p>
+                        <div>Here are the styles our custom verison of Bootstrap 4
+                            <span class="text-danger">does not support</span>:
+                            <b>Cards, Badge, Jumbotron, Progress, Model, Tooltip, Popover, and Spinners</b> but these can be activated in boostarp_theme/bootstrap/bootstrap.scss if absoulutey needed.
+                        </div>
+                    </div>
+                    <div class="container mt-3">
+                        <p><a href="#filler">Here is a link</a> for styling purposes and blow buttons. All links that don&apos;t need to be updated for the live website <a href="#filler">get #filler</a> as the href=&quot;&quot; and links that need to be populated with a live site URL get #link temporarily until they can be replaced with the live site URL (this is rare, most links are dynamic with WP Actions). You can control links variables with $link</p>
+                        <div class="mb-3 mt-3">
+                            <a class="btn btn-primary ml-2 mr-2" href="#filler">Regular Button</a>
+                            <a class="btn btn-lg btn-primary ml-2 mr-2" href="#filler">Large Button</a>
+                            <a class="btn btn-primary btn-sm ml-2 mr-2" href="#filler">Small Button</a>
+                        </div>
+                        <p>Buttons have several variabls for padding, color, border radius, font-size, etc. Search $input and/or $button in custom.scss to update these variables. To have round corners on any Bootstrap item $enable-rounded must be set to true.</p>
+                    </div>
+                    <div class="container">
+                        <p>You control text color in a couple different ways. This color is under the $body-color variable which is the most global but we can also have <span class="bg-dark text-light">light text colors (based on $light)</span> and <span class="bg-light text-dark">dark text colors (based on $dark)</span>.</p>
+                    </div>
+                    <div class="container mt-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1>A Heading 1 Title</h1>
+                                <h2>A Heading 2 Title</h2>
+                                <h3>A Heading 3 Title</h3>
+                                <h4>A Heading 4 Title</h4>
+                                <h5>A Heading 5 Title</h5>
+                                <h6>A Heading 6 Title ($h6-font-size in custom.scss)</h6>
+                                <h4 class="display-4">A Heading 4 Title ($display4-size)</h4>
+                                <h3 class="display-3">A Heading 3 Title</h3>
+                                <h2 class="display-2">A Heading 2 Title</h2>
+                                <h1 class="display-1">A Heading 1 Title</h1>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Consectetur adipiscing elit</li>
+                                    <li>Integer molestie lorem at massa</li>
+                                    <li>Nulla volutpat aliquam velit
+                                        <ul>
+                                            <li>Phasellus iaculis neque</li>
+                                            <li>Purus sodales ultricies</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ol>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Consectetur adipiscing elit</li>
+                                    <li>Integer molestie lorem at massa</li>
+                                    <li>Nulla volutpat aliquam velit
+                                        <ul>
+                                            <li>Phasellus iaculis neque</li>
+                                            <li>Purus sodales ultricies</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <samp class="">This text is meant to be treated as sample output from a computer program or code and uses the $font-family-monospace variable.</samp>
+                                <div class="font-italic font-weight-bolder mt-3">To control font family in general update&nbsp;$font-family-monospace and&nbsp;$font-family-sans-serif then asign one to&nbsp;$font-family-base.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="bg-primary pl-1 text-light">Spacer 1 Size (all of these are controlled with $spacers)</div>
+                                <div class="bg-secondary pt-1 text-light"></div>
+                                <div class="bg-primary pl-2 text-light">Spacer 2 Size</div>
+                                <div class="bg-secondary pt-2 text-light"></div>
+                                <div class="bg-primary pl-3 text-light">Spacer 3 Size</div>
+                                <div class="bg-secondary pt-3 text-light"></div>
+                                <div class="bg-primary pl-4 text-light">Spacer 4 Size</div>
+                                <div class="bg-secondary pt-4 text-light"></div>
+                                <div class="bg-primary pl-5 text-light">Spacer 5 Size</div>
+                                <div class="bg-secondary pt-5 text-light"></div>
+                                <div class="bg-primary pl-6 text-light">Spacer 6 Size (6 and higher are add-ons)</div>
+                                <div class="bg-secondary pt-6 text-light"></div>
+                                <div class="bg-primary pl-7 text-light">Spacer 7 Size </div>
+                                <div class="bg-secondary pt-7 text-light"></div>
+                                <div class="bg-primary pl-8 text-light">Spacer 8 Size </div>
+                                <div class="bg-secondary pt-8 text-light"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-1">Light Color</div>
+                                <div class="bg-dark p-1 text-white">Dark Color</div>
+                                <div class="bg-primary p-1 text-white">Primary</div>
+                                <div class="bg-secondary p-1 text-white">Secondary</div>
+                                <div class="bg-info p-1 text-white">Tertiary (this is not Bootstrap, so we use BS $info varaible and set it to $tertiary)</div>
+                                <p>You can also use $gray-100 through $gray-900 by 100&apos;s to keep gray scale consistant in the site.</p>
+                                <div class="bg-info p-1 text-white">$white for white and
+                                    <span>$black for black</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="jr_wrapper_footer" data-pg-name="JR Footer Wrapper" data-pgc-define="jr-footer" data-pgc-define-name="JR Footer">
+                <div class="top_footer"></div>
+                <div class="bottom_footer_wrapper">
+                    <div class="bottom_footer">
+                        <div class="container">
+                            <div id="rope_wrap">
+                                <div id="grav_footer_wrapper" class="cta_form">
+                                    <div class="stars">
+                                        <img src="assets/images/Car-Wreck-Cowboy-lawyer-3stars.png" alt="Car Wreck Cowboy 3 Stars" class="stars"/>
+                                    </div>
+                                    <div class="title">Contact Us Right Now For a Free Consultation</div>
+                                    <div id="gravity_foot_form" wp-call-function="gravity_form( 1, false, false, false, '', false );" wp-call-function-set="content" class="cta_forms">
+                                        <form method="post" enctype="multipart/form-data" id="gform_1" action="/car-wreck/sample-page/">
+                                            <div class="gform_body">
+                                                <ul id="gform_fields_1" class="gform_fields top_label form_sublabel_below description_below">
+                                                    <li id="field_1_1" class="gfield gf_left_third gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
+                                                        <label class="gfield_label" for="input_1_1">Full Name
+                                                            <span class="gfield_required">*</span>
+                                                        </label>
+                                                        <div class="ginput_container ginput_container_text">
+                                                            <input name="input_1" id="input_1_1" type="text" value="" class="large" aria-required="true" aria-invalid="false" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                                        </div>
+                                                    </li>
+                                                    <li id="field_1_2" class="gfield gf_middle_third gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
+                                                        <label class="gfield_label" for="input_1_2">Email Address
+                                                            <span class="gfield_required">*</span>
+                                                        </label>
+                                                        <div class="ginput_container ginput_container_email">
+                                                            <input name="input_2" id="input_1_2" type="text" value="" class="large" aria-required="true" aria-invalid="false">
+                                                        </div>
+                                                    </li>
+                                                    <li id="field_1_3" class="gfield gf_right_third gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
+                                                        <label class="gfield_label" for="input_1_3">Phone Number
+                                                            <span class="gfield_required">*</span>
+                                                        </label>
+                                                        <div class="ginput_container ginput_container_phone">
+                                                            <input name="input_3" id="input_1_3" type="text" value="" class="large" aria-required="true" aria-invalid="false">
+                                                        </div>
+                                                    </li>
+                                                    <li id="field_1_4" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
+                                                        <label class="gfield_label" for="input_1_4">Your Message
+                                                            <span class="gfield_required">*</span>
+                                                        </label>
+                                                        <div class="ginput_container ginput_container_textarea">
+                                                            <textarea name="input_4" id="input_1_4" class="textarea large" aria-required="true" aria-invalid="false" rows="10" cols="50" spellcheck="false"></textarea>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="gform_footer top_label">
+                                                <input type="submit" id="gform_submit_button_1" class="gform_button button" value="Submit" onclick="if(window[&quot;gf_submitting_1&quot;]){return false;}  window[&quot;gf_submitting_1&quot;]=true;  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_1&quot;]){return false;} window[&quot;gf_submitting_1&quot;]=true;  jQuery(&quot;#gform_1&quot;).trigger(&quot;submit&quot;,[true]); }">
+                                                <input type="hidden" class="gform_hidden" name="is_submit_1" value="1">
+                                                <input type="hidden" class="gform_hidden" name="gform_submit" value="1">
+                                                <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+                                                <input type="hidden" class="gform_hidden" name="state_1" value="WyJbXSIsImM1NmExMDZiYTA2MWM1ZWFhODc3MWRkNzFjMTViNjlmIl0=">
+                                                <input type="hidden" class="gform_hidden" name="gform_target_page_number_1" id="gform_target_page_number_1" value="0">
+                                                <input type="hidden" class="gform_hidden" name="gform_source_page_number_1" id="gform_source_page_number_1" value="1">
+                                                <input type="hidden" name="gform_field_values" value="">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div id="footer_menu">
+                                    <ul class="mt-2 mt-lg-0 navbar-nav" wp-nav-menu wp-nav-menu-type="bootstrap4" wp-if-has-nav-menu="footer" wp-nav-menu-depth="1" wp-nav-menu-theme-location="footer" id="menu-footer-navigation">
+                                        <li class="nav-item active">
+                                            <a class="nav-item nav-link" href="#filler">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="#filler">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="#filler">What We Do</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="#filler">Results</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="#filler">Locations</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="#filler">contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="contact_logo">
+                                    <div class="row">
+                                        <div class="col-md-4 footer_text_col jr_column">
+                                            <div class="text_wrap">
+                                                <div class="twentyfour">24/7 Free Consultations</div>
+                                                <a href="tel:1-855-269-2699" class="footer_cta number">1-855-COWBOY9</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 jr_column" id="footer_logo">
+                                            <a href="" cms-site-link="home"><img src="assets/images/Car-Wreck-Cowboy-lawyer-logo.png" alt="Footer Logo"/></a>
+                                        </div>
+                                        <div class="col-md-4 footer_text_col jr_column">
+                                            <div class="text_wrap">
+                                                <div class="twentyfour">24/7 Free Consultations</div>
+                                                <div class="social_wrapper">
+                                                    <a href="#link" class="footer_cta social">FB.</a>
+                                                    <a href="#link" class="footer_cta social">TW.</a>
+                                                    <a href="#link" class="footer_cta social">YT.</a>
+                                                    <a href="#link" class="footer_cta social">IG.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="copyright">Copyright &copy; Montgomery Law, PLLC | Personal Injury &amp; Car Accident Lawyers</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- container end -->
+            </footer>
+        </div>
+        <script src="assets/js/jquery.min.js" wp-no-export data-pg-name="Local jQuery"></script>
+        <script wp-enqueue-script="jquery" data-pg-name="Enqueue WP jQuery"></script>
+        <script src="bootstrap/js/bootstrap.min.js" wp-enqueue-script wp-enqueue-script-in-footer="true"></script>
+        <script type="text/javascript" src="assets/js/greensock/gsap.min.js" wp-enqueue-script="greensock" wp-enqueue-script-deps="wp-mediaelement" wp-enqueue-script-in-footer="true"></script>
+        <script type="text/javascript" src="assets/js/greensock/Draggable.min.js" wp-enqueue-script="dragsock" wp-enqueue-script-deps="greensock" wp-enqueue-script-in-footer="true"></script>
+        <script type="text/javascript" src="assets/js/greensock/InertiaPlugin.min.js" wp-enqueue-script="inertiasock" wp-enqueue-script-deps="dragsock" wp-enqueue-script-in-footer="true"></script>
+        <script type="text/javascript" src="assets/js/greensock/ScrollMagic.min.js" wp-enqueue-script="scrollmagic" wp-enqueue-script-in-footer="true" wp-enqueue-script-deps="inertiasock"></script>
+        <script type="text/javascript" src="assets/js/greensock/animation.gsap.min.js" wp-enqueue-script="anasock" wp-enqueue-script-deps="scrollmagic" wp-enqueue-script-in-footer="true"></script>
+        <script type="text/javascript" src="assets/js/greensock/green_ana.js" wp-enqueue-script="green_ana" wp-enqueue-script-in-footer="true" wp-enqueue-script-deps="anasock"></script>
+    </body>
+</html>

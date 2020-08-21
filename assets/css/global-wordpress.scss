@@ -1,0 +1,308 @@
+@mixin center-block() {
+    // Mixins
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// Gutenberg color options
+// -- see color options in custom.php
+$colors: ( primary, $primary ),
+	( secondary, $secondary ),
+	( tertiary, $tertiary ),
+	( white, $white ),
+  ( light-gray, $gray-light ),
+  ( med-gray, $gray-med ),
+  ( med-dark-gray, $gray-med-dark ),
+  ( dark-gray, $gray-dark ),
+  ( black, $black );
+
+/* Color Options
+--------------------------------------------- */
+@each $name, $color in $colors {
+    .has-#{$name}-color {
+        color: $color;
+    }
+
+    .has-#{$name}-background-color {
+        background-color: $color;
+    }
+}
+
+// CONTENT AREA
+.content-area {
+    display: block;
+    width: 100%;
+}
+
+// WP Caption Styles
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+
+    img[class*="wp-image-"] {
+        @include center-block;
+    }
+
+    .wp-caption-text {
+        margin: 0.8075em 0;
+    }
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+// Gallery Styles
+.gallery {
+    margin-bottom: 1.5em;
+}
+
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+
+    .gallery-columns-2 & {
+        max-width: 50%;
+    }
+
+    .gallery-columns-3 & {
+        max-width: 33.33%;
+    }
+
+    .gallery-columns-4 & {
+        max-width: 25%;
+    }
+
+    .gallery-columns-5 & {
+        max-width: 20%;
+    }
+
+    .gallery-columns-6 & {
+        max-width: 16.66%;
+    }
+
+    .gallery-columns-7 & {
+        max-width: 14.28%;
+    }
+
+    .gallery-columns-8 & {
+        max-width: 12.5%;
+    }
+
+    .gallery-columns-9 & {
+        max-width: 11.11%;
+    }
+}
+
+.gallery-caption {
+    display: block;
+}
+
+aside {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.site {
+    word-wrap: break-word;
+}
+
+// Media Styles
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+// Adding basic WordPress classes to pass the WordPress.org tests
+.sticky,
+.gallery-caption,
+.bypostauthor {
+    font-size: inherit;
+}
+
+// Necessary WP classes
+.wp-caption {
+    font-size: inherit;
+}
+
+.wp-caption-text {
+    font-size: inherit;
+}
+
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    text-align: center;
+    margin: 0 auto;
+}
+
+// Post design
+.entry-footer span {
+    padding-right: 10px;
+}
+
+// Limit featured image size to 100%
+img.wp-post-image,
+article img,
+figure,
+img,
+#secondary img {
+    max-width: 100%;
+    height: auto;
+}
+
+article figure {
+    margin: 0px;
+}
+
+.wp-smiley {
+    margin: 0 !important;
+    max-height: 1em;
+}
+
+blockquote,
+blockquote.has-text-align-left {
+    margin: .5rem 0 1.5rem 1.5rem;
+    padding: .5rem 0 .5rem 1.5rem;
+    border-left: 3px solid $primary;
+    overflow: hidden;
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+blockquote.has-text-align-right {
+    margin: .5rem 1.5rem 1.5rem 0;
+    padding: .5rem 1.5rem .5rem 0;
+    border-right: 3px solid $primary;
+    border-left: none;
+}
+
+blockquote.has-text-align-center {
+    border: none;
+    margin: .5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.wp-block-table {
+    display: table;
+
+    th {
+        padding: 4px 4px;
+        text-align: left;
+    }
+
+    td {
+        margin: 0;
+        padding: 15px;
+        border: 1px solid #989696;
+    }
+}
+
+.jr-clear {
+    clear: both;
+}
+
+#TB_window {
+    padding-bottom: 15px;
+}
+
+#comments {
+    label:not(label.wp-comment-cookies-consent) {
+        width: 100%;
+    }
+
+    input,
+    area {
+        border: 1px solid $dark;
+    }
+
+    input[type="submit"] {
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 10px 40px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: all 0.5s ease;
+        color: $black;
+        border: 3px solid $primary;
+        min-width: 100%;
+
+        &:hover {
+            background-color: $secondary;
+        }
+    }
+
+    .comment-form-comment textarea {
+        width: 100%;
+    }
+
+    .comment-form-email,
+    .comment-form-author {
+        width: 50%;
+        float: left;
+    }
+}
+
+.widget-area {
+    .widget {
+        list-style-type: none;
+        margin-bottom: 1.5em;
+    }
+
+    .widget_ul_outer {
+        padding: .5rem;
+    }
+
+    .widget ul li {
+        margin-bottom: 5px;
+    }
+
+    .widget li {
+        list-style-type: none;
+    }
+
+    .widget ul {
+        padding-left: 0;
+    }
+}
+
+aside .widget_search {
+    margin-bottom: $spacer;
+}

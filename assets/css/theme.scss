@@ -1,0 +1,1367 @@
+@import "../../bootstrap_theme/custom.scss";
+@import "global-variables.scss";
+@import "global-wordpress.scss";
+@import "global-woocommerce.scss";
+
+// Begin Custom Theme SCSS
+// greensock classes
+.green_none {
+    visibility: hidden;
+}
+
+.reuse_items {
+    .jr_col_card {
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+    }
+
+    .jr_card {
+        border-radius: $border-radius-lg;
+        border: 1px solid $border-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        overflow: hidden;
+
+        .icon_circle {
+            border-radius: 50%;
+            background-color: $tertiary;
+            padding: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        .icon_wrapper i {
+            font-size: 3rem;
+            color: $secondary;
+        }
+
+        .inner_wrapper {
+            padding: 0 1rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .read_m i {
+            margin-left: .25rem;
+            top: 1px;
+            position: relative;
+        }
+
+        .sub_title_wrapper {
+            font-weight: lighter;
+            margin-bottom: 1rem;
+        }
+
+        .center_wrapper {
+            flex-grow: 1;
+        }
+
+        .icon_wrapper {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.site {
+    overflow: hidden;
+
+    // Skip to content link
+    a.skip-link {
+        position: fixed;
+        z-index: 1000;
+        top: 0px;
+        right: 0px;
+    }
+
+    #site_content #content:focus {
+        outline: none;
+    }
+
+    /* Make sure embeds and iframes fit their containers. */
+    embed,
+    iframe,
+    object {
+        max-width: 100%;
+    }
+}
+
+footer.jr_footer {
+    margin-top: 1.5rem;
+}
+
+#site_content .icon a {
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+// Skip to content link
+a.skip-link {
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    right: 0px;
+}
+
+// GRAVITY FORMS STYLES
+.gform_body {
+    ul {
+        padding: 0px;
+
+        li {
+            list-style: none;
+            margin-bottom: 15px;
+
+            input {
+                display: block;
+                width: 100%;
+            }
+
+            label {
+                margin: 0px;
+            }
+
+            textarea {
+                display: block;
+                width: 100%;
+                max-height: 130px;
+            }
+
+            .ginput_container_name {
+                display: flex;
+
+                span {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.gform_footer {
+    input[type="submit"] {
+        color: #ffffff;
+        outline: none;
+        border: 0px;
+        background-color: $primary;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: $secondary;
+        }
+    }
+}
+
+#page #primary {
+    margin-top: 1em;
+}
+
+.jr_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.blog_left_image {
+    margin-bottom: 1.5em;
+    margin-right: 1em;
+    float: left;
+}
+
+#jumbotron_wrapper {
+    border-bottom: 1px solid;
+
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
+#jr-header {
+    background-image: url('../images/Car-Wreck-Cowboy-lawyer-singlepost-header-background_image.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#jr-header {
+    position: relative;
+}
+
+#gradient_header_img {
+    background-image: url('../images/background-gradient.png');
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-nav .nav-item {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    font-family: oswald, sans-serif;
+}
+
+#cowboy_CTA {
+    background: $secondary;
+    display: flex;
+    padding: 1rem;
+    align-self: stretch;
+    align-items: center;
+}
+
+@media (min-width:1200px) {
+    #cowboy_CTA {
+        margin-right: -12px;
+    }
+}
+
+#jr-header #wrapper-navbar .navbar {
+    padding: 0;
+}
+
+@media (min-width:1400px) {
+    #jr-header #wrapper-navbar .navbar {
+        max-width: 1730px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:1200px) {
+    #jr-header #wrapper-navbar .navbar #logo {
+        padding: .5rem;
+        margin-bottom: -3rem;
+    }
+}
+
+#jr-header #cowboy_CTA a {
+    text-decoration: none;
+    color: $white;
+    font-size: 2rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: 2.3px;
+    font-weight: 500;
+}
+
+#jr-header #cowboy_CTA .twentyfour {
+    color: $white;
+    text-transform: uppercase;
+}
+
+#cowboy_CTA .phone_icon {
+    margin-right: .5rem;
+}
+
+@media (min-width:1200px) and (max-width:1279px) {
+    #cowboy_CTA .phone_icon {
+        display: none;
+    }
+}
+
+#menu-main-navigation > .nav-item > .nav-link:after {
+    content: "";
+    display: inline-flex;
+    width: 10px;
+    height: 15px;
+    margin-left: 1rem;
+    background-image: url('../images/small-star-icon.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#menu-footer-navigation > .nav-item > .nav-link:after {
+    content: "";
+    display: inline-flex;
+    width: 10px;
+    height: 15px;
+    margin-left: 1rem;
+    background-image: url('../images/small-star-icon.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bread_link {
+    margin-right: .5rem;
+}
+
+.bread_link:after {
+    content: "";
+    display: inline-flex;
+    width: 10px;
+    height: 15px;
+    margin-left: .75rem;
+    background-image: url('../images/small-star-icon.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#menu-main-navigation > .nav-item:last-child > .nav-link:after,
+#menu-footer-navigation > .nav-item:last-child > .nav-link:after {
+    display: none;
+}
+
+#jr-header h1 {
+    color: $white;
+}
+
+@media (min-width:1200px) {
+    #h1_wrapper {
+        margin-top: 3rem;
+        padding-bottom: 9rem;
+    }
+}
+
+#h1_wrapper {
+    position: relative;
+    margin-top: 3rem;
+    padding-bottom: 9rem;
+}
+
+@media (max-width:991px) {
+    #h1_wrapper {
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+#jr-header .bread-crumb {
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+#jr-header .bread-crumb .bread_link_here {
+    color: $primary;
+}
+
+#jr-header .bread-crumb a.bread_link {
+    color: $white;
+}
+
+#jr-header .nav_phone_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (max-width:991px) {
+    #jr-header .nav_phone_wrapper {
+        flex-grow: 1;
+    }
+}
+
+@media (min-width:1200px) {
+    #jr-header .nav_phone_wrapper {
+        flex-direction: row;
+        flex-grow: 1;
+    }
+}
+
+#jr-header #cowboy_CTA .text_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+}
+
+@media (min-width:1200px) {
+    #jr-header #cowboy_CTA .text_wrap {
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+
+#jr-header #wrapper-navbar .navbar-toggler {
+    margin-right: 2rem;
+    background: $primary;
+}
+
+@media (max-width:991px) {
+    #jr-header #wrapper-navbar #logo {
+        margin-left: 1rem;
+    }
+}
+
+#menu-footer-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-footer-navigation a.nav-link {
+    color: $white;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+#jr_wrapper_footer #rope_wrap #footer_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white;
+    margin-bottom: 6rem;
+    padding-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: $black;
+    font-family: oswald, sans-serif;
+}
+
+#grav_footer_wrapper {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta_forms {
+    width: 100%;
+    margin-right: 10rem;
+    margin-left: 10rem;
+
+    #gform_wrapper_1 {
+        margin-bottom: 0;
+    }
+
+    .gform_wrapper .gform_footer {
+        text-align: center;
+    }
+
+    #gform_1 input,
+    #gform_1 textarea {
+        background-color: $light-blue;
+    }
+
+    #gform_1 .gform_footer {
+        margin-bottom: -1.5rem;
+        padding-bottom: 0;
+
+        input[type="submit"] {
+            color: #ffffff;
+            outline: none;
+            border: 0px;
+            background-color: $primary;
+            padding: 10px 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.5s ease;
+
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+}
+
+#gravity_cta_form {
+    #gform_wrapper_2 {
+        margin-bottom: 0;
+    }
+
+    .gform_wrapper .gform_footer {
+        text-align: center;
+    }
+
+    #gform_2 input,
+    #gform_2 textarea {
+        background-color: $light-blue;
+    }
+
+    #gform_2 .gform_footer {
+        margin-bottom: -1.5rem;
+        padding-bottom: 0;
+
+        input[type="submit"] {
+            color: #ffffff;
+            outline: none;
+            border: 0px;
+            background-color: $primary;
+            padding: 10px 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.5s ease;
+
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+}
+
+#con_grav_form {
+    .gfield_label {
+        font-weight: bold;
+        font-family: oswald, sans-serif;
+    }
+
+    #gform_wrapper_3 {
+        margin: 0;
+    }
+
+    .gform_wrapper .gform_footer {
+        text-align: left;
+    }
+
+    #gform_3 input,
+    #gform_3 textarea {
+        background-color: $light-blue;
+    }
+
+    #gform_3 .gform_footer {
+        input[type="submit"] {
+            color: #ffffff;
+            outline: none;
+            border: 0px;
+            background-color: $primary;
+            padding: 10px 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.5s ease;
+
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+}
+
+#jr_wrapper_footer .bottom_footer_wrapper {
+    background-image: -webkit-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.92) 90.8108%, rgb(0, 0, 0) 94.0541%, rgba(0, 0, 0, 0.04) 100%);
+    margin-top: -4rem;
+    position: relative;
+    z-index: 2;
+}
+
+#jr_wrapper_footer .bottom_footer {
+    background-image: url('../images/car-wreck-cowboy-rope.png');
+    background-repeat: no-repeat;
+    background-position: center 86%;
+}
+
+#jr_wrapper_footer .bottom_footer #footer_menu {
+    margin-bottom: 3rem;
+}
+
+#jr_wrapper_footer .bottom_footer #grav_footer_wrapper .stars {
+    margin-bottom: .5rem;
+}
+
+#jr_wrapper_footer .bottom_footer #grav_footer_wrapper .title {
+    font-size: 2rem;
+    font-family: oswald, sans-serif;
+}
+
+#jr_wrapper_footer .bottom_footer .contact_logo {
+    padding-bottom: 2rem;
+    max-width: 991px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jr_wrapper_footer .top_footer {
+    background-image: url('../images/Car-Wreck-Cowboy-lawyer-bus.jpg');
+    height: 900px;
+    background-position: center bottom;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+
+@media (min-width:1200px) {
+    #jr_wrapper_footer .top_footer {
+        background-size: cover;
+    }
+}
+
+.contact_logo .jr_column .text_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
+}
+
+.contact_logo .jr_column .text_wrap .twentyfour {
+    color: $secondary;
+}
+
+.contact_logo .footer_text_col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_logo .footer_text_col .footer_cta {
+    color: $white;
+    font-family: oswald, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+}
+
+.footer_text_col .text_wrap .social_wrapper .social {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+#jr_wrapper_footer .bottom_footer_wrapper .copyright {
+    text-align: center;
+    padding-bottom: 4rem;
+    font-weight: bold;
+}
+
+.contact_btn_trans {
+    border: 2px solid $primary;
+    font-family: oswald, sans-serif;
+    color: $white;
+    padding: 1rem 2rem;
+    display: block;
+    width: fit-content;
+}
+
+#front_header_info .title {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+#front_header_info .inner_wrapper #info_block {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#jr-header #front_gradient_header_img {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.75) 0%, rgb(0, 0, 0) 57.027%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#front_header_info #info_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#front_header_info #info_block .sub-title {
+    font-size: 2rem;
+    color: $white;
+    margin-bottom: .5rem;
+}
+
+#front_header_info #info_wrapper {
+    display: flex;
+}
+
+.contact_btn_trans img {
+    margin-left: .25rem;
+}
+
+#consult_wrapper {
+    background-color: $dark;
+}
+
+#consult_wrapper #text_content .jr_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#consult_wrapper .message_wrapper img {
+    margin-right: 2rem;
+}
+
+#consult_wrapper .jr_column .message_wrapper {
+    display: flex;
+    color: $white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.message_wrapper h2.title {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#gravity_cta_front #front_cta_form {
+    box-shadow: 0px 0px 80px 20px rgba(0, 0, 0, 0.49);
+}
+
+@media (min-width:992px) {
+    #consult_wrapper #gravity_cta_front {
+        margin-bottom: -10rem;
+        margin-top: -2rem;
+    }
+}
+
+#gravity_cta_front #front_cta_form .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#free_consult #rope_div img {
+    min-width: 100%;
+}
+
+#rope_div {
+    margin: -2px;
+}
+
+#free_consult #consult_wrapper #text_content {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#types_of .jr_column .inner_wrapper {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#types_of {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+#types_of .inner_wrapper .icon {
+    margin-bottom: 2rem;
+}
+
+#types_of .jr_column .inner_wrapper .text {
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+#types_of .jr_column .inner_wrapper h3.title {
+    margin-bottom: 1rem;
+}
+
+#types_of .jr_column {
+    display: flex;
+}
+
+#dedicated_to .row {
+    padding: 0 0 3rem;
+}
+
+.filled_btn img {
+    padding-left: .5rem;
+}
+
+.filled_btn {
+    background-color: $primary;
+    padding: 1rem;
+    display: block;
+    width: fit-content;
+    color: $white;
+    font-weight: bold;
+    letter-spacing: .5px;
+    transition: all 0.5s ease;
+    border: 2px solid $primary;
+}
+
+.filled_btn:hover {
+    text-decoration: none;
+    color: $white;
+    background-color: $secondary;
+}
+
+.info_text .jr_column .sub_title {
+    color: $secondary;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#dedicated_to #two_car_wreck {
+    margin-top: -8rem;
+    margin-bottom: -8rem;
+}
+
+#types_of h2.title {
+    margin-bottom: 3rem;
+}
+
+.case_info .number {
+    color: $secondary;
+    font-family: oswald, sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.case_info {
+    text-align: center;
+}
+
+.case_info .title {
+    color: $black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#case_slider_wrapper .case_info {
+    width: 33.3%;
+    float: left;
+    padding: .75rem;
+}
+
+#case_results_slider {
+    background-color: $gray-med;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+
+#front_site_content #serious_hurt {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    background-image: url('../images/car-wreck-image.png');
+    background-color: $dark;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#serious_hurt h2.title {
+    color: $white;
+    margin-bottom: 2rem;
+}
+
+#serious_hurt .btn_wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 767px;
+    justify-content: center;
+}
+
+.info_text .jr_column .text {
+    margin-bottom: 2rem;
+}
+
+.btn_wrapper .contact_btn_trans {
+    width: 50%;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_wrapper .filled_btn {
+    width: 50%;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.btn_wrapper .filled_btn span {
+    font-size: 1.5rem;
+}
+
+/* Rectangle Out */
+.contact_btn_trans {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: transparent;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.contact_btn_trans:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $secondary;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.contact_btn_trans:hover,
+.contact_btn_trans:focus,
+.contact_btn_trans:active {
+    color: white;
+    text-decoration: none;
+}
+
+.contact_btn_trans:hover:before,
+.contact_btn_trans:focus:before,
+.contact_btn_trans:active:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.arrows .arrow_box {
+    border: 2px solid $primary;
+    display: flex;
+    align-items: center;
+    padding: .75rem;
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+
+.right_arrow.arrow_box img {
+    transform: scaleX(-1);
+}
+
+.arrow_column {
+    display: flex;
+    align-items: center;
+}
+
+.arrows_inner_wrapper .arrows {
+    display: flex;
+    justify-content: center;
+}
+
+#sadat_m #profile_img.container {
+    background-image: url('../images/the-car-wreck-cowboy-attorney-100.jpg');
+    background-position: left bottom;
+    background-size: contain;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+#two_car_wreck #accident_bck img {
+    height: 100%;
+    position: absolute;
+    max-width: inherit;
+    right: 25px;
+}
+
+#dedicated_to .jr_column #hat_col {
+    position: absolute;
+    max-width: initial;
+    width: 273px;
+    bottom: -120px;
+    left: 0;
+}
+
+#dedicated_to {
+    background-color: #fafbfd;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+#awards_slider .inner_wrapper {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.41);
+    padding: 2rem 1rem;
+    background-color: $white;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width:1200px) {
+    #awards_slider .inner_wrapper {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        height: 100%;
+    }
+}
+
+.sliders {
+    display: flex;
+    align-items: stretch;
+    z-index: 3;
+}
+
+#profile_img #carwreck_profile_right {
+    padding-bottom: 4rem;
+}
+
+.front_header #slider_container_wrapper {
+    background-color: $gray-med;
+}
+
+#awards_slider .inner_wrapper .icons_wrapper .icon {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    float: left;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#front_site_content #client_reviews {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    margin-bottom: -20rem;
+    background-image: -webkit-linear-gradient(bottom, rgba(244, 245, 247, 0) 0%, rgb(244, 245, 247) 100%);
+    position: relative;
+    z-index: 2;
+}
+
+@media (min-width:1200px) {
+    #client_reviews {
+        margin-bottom: -6rem;
+    }
+}
+
+#client_reviews #test_wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+#test_wrapper .inner_wrapper .title {
+    color: $primary;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#test_wrapper .inner_wrapper .review {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+#test_wrapper .inner_wrapper .name_test {
+    font-weight: bold;
+}
+
+#client_reviews .arrows_inner_wrapper h4 {
+    text-align: center;
+}
+
+#client_reviews #client_reviews_arrows {
+    display: flex;
+    align-items: center;
+}
+
+#test_wrapper img {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+#test_wrapper .inner_wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+#jr-header #h1_wrapper .excerpt_header {
+    color: $white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+#site_content .page_cta {
+    background-color: $dark;
+    display: flex;
+    text-align: center;
+    margin-top: -4rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+#site_content .page_cta .sigle_cta {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.page_cta .sigle_cta .cta_sub_title {
+    color: $secondary;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    font-size: .95rem;
+}
+
+.page_cta .sigle_cta a .cta_text {
+    color: $white;
+    font-size: 1.5rem;
+}
+
+.page_cta .sigle_cta .icon {
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#site_content {
+    position: relative;
+    z-index: 2;
+}
+
+#site_content .stars {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#about_sadat_m .jr_column {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $secondary;
+        margin-bottom: 1.5rem;
+    }
+}
+
+#about_sadat_m > h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#about_sadat_m {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: $light;
+}
+
+#about_sadat_m .jr_column .inner_wrapper img {
+    height: 100%;
+    position: absolute;
+    max-width: inherit;
+    right: 25px;
+}
+
+#about_sadat_m #sadat_img_col {
+    margin-bottom: -4rem;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: -4rem;
+}
+
+#how_can {
+    background-image: url('../images/car-accident-pain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    background-position: right bottom;
+}
+
+#how_can #how_gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+#how_can .container {
+    position: relative;
+    z-index: 2;
+}
+
+#how_can .container .jr_column {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#how_can .jr_column h2.title {
+    color: $white;
+    margin-bottom: 2rem;
+}
+
+#how_can .jr_column .call_today {
+    color: $primary;
+    text-transform: uppercase;
+    font-size: .95rem;
+}
+
+#how_can .jr_column .phone a.number {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: oswald, sans-serif;
+    letter-spacing: 1px;
+}
+
+#our_videos {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url('../images/Car-Wreck-Cowboy-lawyer-about-lasso-rope.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#video_slider .inner_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.video_wrapper .gradient_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.video_wrapper .video_item {
+    position: relative;
+    width: 50%;
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.video_wrapper .video_item .play_btn {
+    position: absolute;
+    left: 50%;
+    transform: translate(-55px, -55px);
+    top: 50%;
+    z-index: 2;
+}
+
+.sliders .arrows {
+    min-width: 54px;
+}
+
+.video_wrapper .video_item .video_wrapper {
+    position: relative;
+}
+
+.contact_page #page-wrapper {
+    margin-top: 4rem;
+}
+
+#our_offices #office_container {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.41);
+    align-items: center;
+    width: 100%;
+    background-color: $white;
+    padding: 2rem 3rem;
+}
+
+#awards_slider_contact .inner_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#awards_slider_contact .inner_wrapper .icons_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#awards_slider_contact {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#our_offices #map {
+    position: relative;
+    z-index: 1;
+}
+
+#our_offices .container {
+    position: relative;
+    z-index: 2;
+}
+
+#contact_us_page #jr_wrapper_footer {
+    position: relative;
+    z-index: 1;
+}
+
+#site_content.contact_page {
+    z-index: 3;
+}
+
+#slider_container_contact {
+    background: $white;
+}
+
+#contact_us_page #jr_wrapper_footer .bottom_footer_wrapper .bottom_footer {
+    padding-top: 8rem;
+}
+
+#contact_us_page #primary #main .row .jr_column .inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#awards_slider .icons_wrapper {
+    height: 100%;
+    display: inline-flex;
+}
+
+#awards_slider .inner_wrapper .icons_outer_wrapper {
+    overflow: hidden;
+}
+
+#test_wrapper .test_slider_wrapper .test_slider_container {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+#test_wrapper .test_slider_wrapper {
+    overflow: hidden;
+}

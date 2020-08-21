@@ -1,0 +1,84 @@
+/* Global Variables and JR SCSS ONLY - Custom theme CSS goes in theme.scss */
+// Custom Theme Variables
+// Custom BreakPoint Functionality
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$breakpoints: (
+    'sm': (min-width: $sm),
+    'md': (min-width: $md),
+    'lg': (min-width: $lg),
+    'xl': (min-width: $xl),
+    'xxl': (min-width: $xxl),
+);
+
+@mixin bp($name) {
+    @if map-has-key($breakpoints, $name) {
+        @media #{inspect(map-get($breakpoints, $name))} {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Couldn't find a breakpoint named `#{$name}`.";
+    }
+}
+
+@include bp(xxl) {
+    .container {
+        max-width: 1348px;
+    }
+}
+
+// section padding options
+$jr-pad: 1rem;
+
+.a_jr_pad_sm {
+    padding: $jr-pad 0;
+
+    @include bp(sm) {
+        padding: $jr-pad * 1.25 0;
+    }
+
+    @include bp(md) {
+        padding: $jr-pad * 1.5 0;
+    }
+
+    @include bp(lg) {
+        padding: $jr-pad * 1.75 0;
+    }
+}
+
+.a_jr_pad_md {
+    padding: $jr-pad * 2 0;
+
+    @include bp(sm) {
+        padding: $jr-pad * 2.25 0;
+    }
+
+    @include bp(md) {
+        padding: $jr-pad * 2.5 0;
+    }
+
+    @include bp(lg) {
+        padding: $jr-pad * 2.75 0;
+    }
+}
+
+.a_jr_pad_lg {
+    padding: $jr-pad * 3 0;
+
+    @include bp(sm) {
+        padding: $jr-pad * 3.25 0;
+    }
+
+    @include bp(md) {
+        padding: $jr-pad * 3.5 0;
+    }
+
+    @include bp(lg) {
+        padding: $jr-pad * 3.75 0;
+    }
+}
